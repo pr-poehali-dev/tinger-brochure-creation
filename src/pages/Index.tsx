@@ -4,6 +4,13 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-8 print:bg-white print:py-0">
       <div className="w-[210mm] h-[297mm] mx-auto bg-white shadow-2xl print:shadow-none relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-[40%] h-[50%] opacity-10 pointer-events-none">
+          <img 
+            src="https://cdn.poehali.dev/projects/63a8923a-a47d-464c-99a6-27176db14d8b/files/dd8556dd-06fe-4c10-a964-067ba2444027.jpg" 
+            alt="Wheat background"
+            className="w-full h-full object-cover"
+          />
+        </div>
         
         <header className="relative h-[44.5mm] bg-gradient-to-r from-[#90EE90] to-[#FFD700] px-8 py-6 flex flex-col items-center justify-center">
           <div className="absolute top-4 right-8">
@@ -183,7 +190,7 @@ const Index = () => {
             <div className="flex items-center gap-3">
               <Icon name="Phone" size={16} className="text-[#2E8B57]" />
               <p className="text-sm">
-                Телефон: <strong>+7 (XXX) XXX-XX-XX</strong>
+                Телефон: <strong>+7 (495) 123-45-67</strong>
               </p>
             </div>
             <div className="flex items-center gap-3">
@@ -201,7 +208,7 @@ const Index = () => {
             <div className="flex items-center gap-3">
               <Icon name="MapPin" size={16} className="text-[#2E8B57]" />
               <p className="text-sm">
-                Адрес: <strong>г. Москва, ул. Полевая, д. 25</strong>
+                Адрес: <strong>Московская обл., г. Подольск, ул. Агрономическая, 15</strong>
               </p>
             </div>
           </div>
