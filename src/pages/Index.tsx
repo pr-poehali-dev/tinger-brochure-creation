@@ -1,4 +1,5 @@
 import Icon from '@/components/ui/icon';
+import { QRCodeSVG } from 'qrcode.react';
 
 const Index = () => {
   return (
@@ -183,10 +184,12 @@ const Index = () => {
         </section>
 
         <footer className="px-12 py-5">
-          <h2 className="text-lg font-bold text-[#2E8B57] mb-3" style={{fontFamily: 'Montserrat'}}>
-            Контакты
-          </h2>
-          <div className="space-y-2 mb-4">
+          <div className="flex justify-between items-start">
+            <div className="flex-1">
+              <h2 className="text-lg font-bold text-[#2E8B57] mb-3" style={{fontFamily: 'Montserrat'}}>
+                Контакты
+              </h2>
+              <div className="space-y-2 mb-4">
             <div className="flex items-center gap-3">
               <Icon name="Phone" size={16} className="text-[#2E8B57]" />
               <p className="text-sm">
@@ -205,11 +208,25 @@ const Index = () => {
                 Сайт: <strong>www.tinger-seeds.ru</strong>
               </p>
             </div>
-            <div className="flex items-center gap-3">
-              <Icon name="MapPin" size={16} className="text-[#2E8B57]" />
-              <p className="text-sm">
-                Адрес: <strong>Московская обл., г. Подольск, ул. Агрономическая, 15</strong>
-              </p>
+                <div className="flex items-center gap-3">
+                  <Icon name="MapPin" size={16} className="text-[#2E8B57]" />
+                  <p className="text-sm">
+                    Адрес: <strong>Московская обл., г. Подольск, ул. Агрономическая, 15</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="flex flex-col items-center ml-8">
+              <div className="bg-white p-2 rounded-lg border-2 border-[#2E8B57]">
+                <QRCodeSVG 
+                  value="https://www.tinger-seeds.ru" 
+                  size={80}
+                  level="H"
+                  includeMargin={false}
+                />
+              </div>
+              <p className="text-xs text-[#696969] mt-1 text-center">Наш сайт</p>
             </div>
           </div>
           
