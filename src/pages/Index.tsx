@@ -2,10 +2,10 @@ import Icon from '@/components/ui/icon';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white">
-      <div className="max-w-[210mm] mx-auto bg-white shadow-2xl">
+    <div className="min-h-screen bg-gray-100 py-8 print:bg-white print:py-0">
+      <div className="w-[210mm] h-[297mm] mx-auto bg-white shadow-2xl print:shadow-none relative overflow-hidden">
         
-        <header className="relative h-[15vh] bg-gradient-to-r from-[#90EE90] to-[#FFD700] px-8 py-6 flex flex-col items-center justify-center">
+        <header className="relative h-[44.5mm] bg-gradient-to-r from-[#90EE90] to-[#FFD700] px-8 py-6 flex flex-col items-center justify-center">
           <div className="absolute top-4 right-8">
             <div className="w-20 h-20 bg-white/30 rounded-full flex items-center justify-center backdrop-blur-sm">
               <Icon name="Wheat" size={48} className="text-[#2E8B57]" />
@@ -24,116 +24,116 @@ const Index = () => {
         </header>
 
         <section className="px-12 py-8">
-          <h2 className="text-2xl font-bold text-[#2E8B57] mb-4" style={{fontFamily: 'Montserrat'}}>
+          <h2 className="text-xl font-bold text-[#2E8B57] mb-3" style={{fontFamily: 'Montserrat'}}>
             О сорте
           </h2>
-          <p className="text-base mb-4 leading-relaxed">
+          <p className="text-sm mb-3 leading-relaxed">
             Пшеница «Тингер» — современный сорт для фермеров, которые ценят:
           </p>
-          <div className="space-y-3">
+          <div className="space-y-2">
             <div className="flex items-start gap-3">
-              <Icon name="Wheat" size={20} className="text-[#2E8B57] mt-1 flex-shrink-0" />
-              <p className="text-base">стабильную урожайность даже в сложных погодных условиях;</p>
+              <Icon name="Wheat" size={16} className="text-[#2E8B57] mt-1 flex-shrink-0" />
+              <p className="text-sm">стабильную урожайность даже в сложных погодных условиях;</p>
             </div>
             <div className="flex items-start gap-3">
-              <Icon name="Shield" size={20} className="text-[#2E8B57] mt-1 flex-shrink-0" />
-              <p className="text-base">устойчивость к болезням и вредителям;</p>
+              <Icon name="Shield" size={16} className="text-[#2E8B57] mt-1 flex-shrink-0" />
+              <p className="text-sm">устойчивость к болезням и вредителям;</p>
             </div>
             <div className="flex items-start gap-3">
-              <Icon name="Cookie" size={20} className="text-[#2E8B57] mt-1 flex-shrink-0" />
-              <p className="text-base">высокое качество зерна (отличные хлебопекарные свойства);</p>
+              <Icon name="Cookie" size={16} className="text-[#2E8B57] mt-1 flex-shrink-0" />
+              <p className="text-sm">высокое качество зерна (отличные хлебопекарные свойства);</p>
             </div>
             <div className="flex items-start gap-3">
-              <Icon name="Layers" size={20} className="text-[#2E8B57] mt-1 flex-shrink-0" />
-              <p className="text-base">адаптивность к разным типам почв.</p>
+              <Icon name="Layers" size={16} className="text-[#2E8B57] mt-1 flex-shrink-0" />
+              <p className="text-sm">адаптивность к разным типам почв.</p>
             </div>
           </div>
         </section>
 
-        <section className="mx-12 px-8 py-8 bg-[#FFF8DC] border border-[#D3D3D3] rounded-lg">
-          <h2 className="text-xl font-bold text-[#2E8B57] mb-4" style={{fontFamily: 'Montserrat'}}>
+        <section className="mx-12 px-8 py-6 bg-[#FFF8DC] border border-[#D3D3D3] rounded-lg">
+          <h2 className="text-lg font-bold text-[#2E8B57] mb-3" style={{fontFamily: 'Montserrat'}}>
             Ключевые преимущества
           </h2>
-          <div className="space-y-3">
+          <div className="space-y-2">
             <div className="flex items-start gap-3">
-              <span className="text-[#2E8B57] text-xl font-bold">✓</span>
-              <p className="text-base leading-relaxed">
+              <span className="text-[#2E8B57] text-lg font-bold">✓</span>
+              <p className="text-sm leading-relaxed">
                 <strong>Урожайность:</strong> до 80 ц/га при правильной агротехнике.
               </p>
             </div>
             <div className="flex items-start gap-3">
-              <span className="text-[#2E8B57] text-xl font-bold">✓</span>
-              <p className="text-base leading-relaxed">
+              <span className="text-[#2E8B57] text-lg font-bold">✓</span>
+              <p className="text-sm leading-relaxed">
                 <strong>Устойчивость:</strong> к полеганию, мучнистой росе, бурой ржавчине.
               </p>
             </div>
             <div className="flex items-start gap-3">
-              <span className="text-[#2E8B57] text-xl font-bold">✓</span>
-              <p className="text-base leading-relaxed">
+              <span className="text-[#2E8B57] text-lg font-bold">✓</span>
+              <p className="text-sm leading-relaxed">
                 <strong>Скороспелость:</strong> вегетационный период — 90–95 дней.
               </p>
             </div>
             <div className="flex items-start gap-3">
-              <span className="text-[#2E8B57] text-xl font-bold">✓</span>
-              <p className="text-base leading-relaxed">
+              <span className="text-[#2E8B57] text-lg font-bold">✓</span>
+              <p className="text-sm leading-relaxed">
                 <strong>Качество зерна:</strong> белок — до 14,5%, клейковина — не менее 27%.
               </p>
             </div>
             <div className="flex items-start gap-3">
-              <span className="text-[#2E8B57] text-xl font-bold">✓</span>
-              <p className="text-base leading-relaxed">
+              <span className="text-[#2E8B57] text-lg font-bold">✓</span>
+              <p className="text-sm leading-relaxed">
                 <strong>Адаптивность:</strong> подходит для Центрального, Волго‑Вятского регионов.
               </p>
             </div>
           </div>
         </section>
 
-        <section className="px-12 py-8 bg-gradient-to-r from-[#F0FFF0] to-[#FFF0F5]">
-          <h2 className="text-xl font-bold text-[#2E8B57] mb-6" style={{fontFamily: 'Montserrat'}}>
+        <section className="px-12 py-6 bg-gradient-to-r from-[#F0FFF0] to-[#FFF0F5]">
+          <h2 className="text-lg font-bold text-[#2E8B57] mb-4" style={{fontFamily: 'Montserrat'}}>
             Рекомендации по посеву
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full border border-[#D3D3D3] bg-white">
               <thead>
                 <tr className="bg-[#F5F5F5]">
-                  <th className="border border-[#D3D3D3] px-4 py-3 text-left text-base font-semibold text-[#2E8B57]">
+                  <th className="border border-[#D3D3D3] px-3 py-2 text-left text-sm font-semibold text-[#2E8B57]">
                     Показатель
                   </th>
-                  <th className="border border-[#D3D3D3] px-4 py-3 text-left text-base font-semibold text-[#2E8B57]">
+                  <th className="border border-[#D3D3D3] px-3 py-2 text-left text-sm font-semibold text-[#2E8B57]">
                     Значение
                   </th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="border border-[#D3D3D3] px-4 py-3 text-base">
+                  <td className="border border-[#D3D3D3] px-3 py-2 text-sm">
                     Оптимальные сроки
                   </td>
-                  <td className="border border-[#D3D3D3] px-4 py-3 text-base">
+                  <td className="border border-[#D3D3D3] px-3 py-2 text-sm">
                     Первая половина апреля (+5...+8°C)
                   </td>
                 </tr>
                 <tr className="bg-[#FAFAFA]">
-                  <td className="border border-[#D3D3D3] px-4 py-3 text-base">
+                  <td className="border border-[#D3D3D3] px-3 py-2 text-sm">
                     Норма высева
                   </td>
-                  <td className="border border-[#D3D3D3] px-4 py-3 text-base">
+                  <td className="border border-[#D3D3D3] px-3 py-2 text-sm">
                     4–5 млн семян/га
                   </td>
                 </tr>
                 <tr>
-                  <td className="border border-[#D3D3D3] px-4 py-3 text-base">
+                  <td className="border border-[#D3D3D3] px-3 py-2 text-sm">
                     Глубина заделки
                   </td>
-                  <td className="border border-[#D3D3D3] px-4 py-3 text-base">
+                  <td className="border border-[#D3D3D3] px-3 py-2 text-sm">
                     4–6 см
                   </td>
                 </tr>
                 <tr className="bg-[#FAFAFA]">
-                  <td className="border border-[#D3D3D3] px-4 py-3 text-base">
+                  <td className="border border-[#D3D3D3] px-3 py-2 text-sm">
                     Предшественники
                   </td>
-                  <td className="border border-[#D3D3D3] px-4 py-3 text-base">
+                  <td className="border border-[#D3D3D3] px-3 py-2 text-sm">
                     Бобовые, пропашные культуры
                   </td>
                 </tr>
@@ -142,75 +142,75 @@ const Index = () => {
           </div>
         </section>
 
-        <section className="px-12 py-8">
-          <h2 className="text-xl font-bold text-[#2E8B57] mb-5" style={{fontFamily: 'Montserrat'}}>
+        <section className="px-12 py-5">
+          <h2 className="text-lg font-bold text-[#2E8B57] mb-3" style={{fontFamily: 'Montserrat'}}>
             Почему выбирают «Тингер»?
           </h2>
-          <div className="space-y-3">
+          <div className="space-y-2">
             <div className="flex items-start gap-3">
-              <span className="text-[#FFD700] text-2xl">✓</span>
-              <p className="text-base leading-relaxed">
+              <span className="text-[#FFD700] text-lg">✓</span>
+              <p className="text-sm leading-relaxed">
                 <strong>Проверено временем:</strong> в Госреестре РФ, выращивается {'>'} 5 лет.
               </p>
             </div>
             <div className="flex items-start gap-3">
-              <span className="text-[#FFD700] text-2xl">✓</span>
-              <p className="text-base leading-relaxed">
+              <span className="text-[#FFD700] text-lg">✓</span>
+              <p className="text-sm leading-relaxed">
                 <strong>Экономическая выгода:</strong> низкие затраты на защиту растений.
               </p>
             </div>
             <div className="flex items-start gap-3">
-              <span className="text-[#FFD700] text-2xl">✓</span>
-              <p className="text-base leading-relaxed">
+              <span className="text-[#FFD700] text-lg">✓</span>
+              <p className="text-sm leading-relaxed">
                 <strong>Гарантия качества:</strong> контроль по ГОСТ.
               </p>
             </div>
           </div>
         </section>
 
-        <section className="mx-12 bg-[#FF4500] text-white py-8 px-8 text-center rounded-lg">
-          <p className="text-2xl font-bold leading-tight" style={{fontFamily: 'Montserrat'}}>
+        <section className="mx-12 bg-[#FF4500] text-white py-5 px-8 text-center rounded-lg">
+          <p className="text-xl font-bold leading-tight" style={{fontFamily: 'Montserrat'}}>
             ПРИ ЗАКАЗЕ ОТ 1 ТОННЫ — СКИДКА 10%<br />
             И БЕСПЛАТНАЯ ДОСТАВКА ДО ВАШЕГО ХОЗЯЙСТВА!
           </p>
         </section>
 
-        <footer className="px-12 py-8 pb-12">
-          <h2 className="text-xl font-bold text-[#2E8B57] mb-5" style={{fontFamily: 'Montserrat'}}>
+        <footer className="px-12 py-5">
+          <h2 className="text-lg font-bold text-[#2E8B57] mb-3" style={{fontFamily: 'Montserrat'}}>
             Контакты
           </h2>
-          <div className="space-y-3 mb-6">
+          <div className="space-y-2 mb-4">
             <div className="flex items-center gap-3">
-              <Icon name="Phone" size={20} className="text-[#2E8B57]" />
-              <p className="text-base">
+              <Icon name="Phone" size={16} className="text-[#2E8B57]" />
+              <p className="text-sm">
                 Телефон: <strong>+7 (XXX) XXX-XX-XX</strong>
               </p>
             </div>
             <div className="flex items-center gap-3">
-              <Icon name="Mail" size={20} className="text-[#2E8B57]" />
-              <p className="text-base">
+              <Icon name="Mail" size={16} className="text-[#2E8B57]" />
+              <p className="text-sm">
                 Email: <strong>info@tinger-seeds.ru</strong>
               </p>
             </div>
             <div className="flex items-center gap-3">
-              <Icon name="Globe" size={20} className="text-[#2E8B57]" />
-              <p className="text-base">
+              <Icon name="Globe" size={16} className="text-[#2E8B57]" />
+              <p className="text-sm">
                 Сайт: <strong>www.tinger-seeds.ru</strong>
               </p>
             </div>
             <div className="flex items-center gap-3">
-              <Icon name="MapPin" size={20} className="text-[#2E8B57]" />
-              <p className="text-base">
+              <Icon name="MapPin" size={16} className="text-[#2E8B57]" />
+              <p className="text-sm">
                 Адрес: <strong>г. Москва, ул. Полевая, д. 25</strong>
               </p>
             </div>
           </div>
           
-          <p className="text-center text-2xl font-bold text-[#2E8B57] mb-3" style={{fontFamily: 'Montserrat'}}>
+          <p className="text-center text-lg font-bold text-[#2E8B57] mb-2" style={{fontFamily: 'Montserrat'}}>
             ЗАКАЖИТЕ СЕГОДНЯ — ОБЕСПЕЧЬТЕ УРОЖАЙ ЗАВТРА!
           </p>
           
-          <p className="text-center text-sm text-[#696969] italic">
+          <p className="text-center text-xs text-[#696969] italic">
             *Количество семян ограничено. Условия акции уточняйте у менеджера.
           </p>
         </footer>
